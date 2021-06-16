@@ -1,0 +1,7 @@
+.vscode
+*.pyc
+__pycache__/
+*.egg*
+logs/
+.ipynb_checkpoints/
+.DS_Store

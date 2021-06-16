@@ -1,0 +1,11 @@
+# Definition of global variables (all stages)
+variables:
+  CONDA_ROOT: "/idiap/user/apannatier/miniconda3"
+
+before_script:
+  - source ${CONDA_ROOT}/etc/profile.d/conda.sh
+  - conda activate base
+
+test:
+  script:
+    - python3 -m pytest
