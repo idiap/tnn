@@ -12,11 +12,12 @@ setuptools.setup(
     "Find Nearest Neighbors efficiently if the data set is arranged in trajectories",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://gitlab.idiap.ch/apannatier/trajectory-nearest-neighbors",
+    url="tobedetermined",
     packages=setuptools.find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
         "Operating System :: OS Independent",
     ],
+    install_requires=["torch>=1.8", "numpy", "pytest"],
     python_requires='>=3.6',
     license="GNU AGPLv3")
