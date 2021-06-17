@@ -76,7 +76,7 @@ def distance_to_segments_with_lim(trajs,
     A, B = trajs.A[mi], trajs.B[mi]
     TA, TB = trajs.TA[mi], trajs.TB[mi]
     E, U = trajs.E[mi], trajs.U[mi]
-    t = torch.clamp((-(A - batch) * U).sum(2), 0, 1)
+    t = torch.clamp((-(A - b) * U).sum(2), 0, 1)
     error = E * s[:, :3].max(1).values.unsqueeze(1)
 
     P_AB = t.unsqueeze(2) * (B - A) + A
