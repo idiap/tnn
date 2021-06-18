@@ -1,7 +1,14 @@
 # Trajectory Nearest Neighbors
 
-Author : [Arnaud Pannatier \<arnaud.pannatier@idiap.ch\>](mailto:arnaud.pannatier@idiap.ch)
-For any questions/remarks about this work or my research, feel free to contact me.
+This code was developed as a part of the **Innosuisse MALAT: Machine Learning for Air Traffic** project, which is a partnership between SkySoft ATM and the Idiap Research Institute.
+
+Main research partner : **Pr. François Fleuret (UNIGE)**
+
+Project manager : **Didier Berling (SkySoft ATM)**
+
+Author : **[Arnaud Pannatier \<arnaud.pannatier@idiap.ch\>](mailto:arnaud.pannatier@idiap.ch) (Idiap Research Institute)**.
+
+For any questions/remarks about this work or my research, feel free to contact the author.
 
 ## Abstract
 
