@@ -1,7 +1,7 @@
 # Trajectory Nearest Neighbors
 
 Author : [Arnaud Pannatier \<arnaud.pannatier@idiap.ch\>](mailto:arnaud.pannatier@idiap.ch)
-For any questions/remarks about this work or about my research, feel free to contact me.
+For any questions/remarks about this work or my research, feel free to contact me.
 
 ## Abstract
 
@@ -11,8 +11,6 @@ We introduce an efficient and exact strategy that can be implemented with algebr
 This method can be used with a scalable Euclidean metric and allows to mask data points along one dimension.
 When applied, this method is more efficient than plain Euclidean $k$-NN and other well-known data selection methods like KDTrees and provides a several-fold speed-up.
 
-We demonstrate the efficiency of our approach in a machine learning pipeline to forecast high-altitude wind speed from live data measured by planes. We provide an implementation in PyTorch and a novel data set to allow the replication of empirical results.
-
 A publication is pending review at [ICONIP 2021](https://iconip2021.apnns.org/).
 
 ## How to use?
@@ -20,7 +18,7 @@ A publication is pending review at [ICONIP 2021](https://iconip2021.apnns.org/).
 This algorithm works best if your dataset is organized in trajectories.
 By default, it assumes a dataset made of 4D points and does the masking along the 4th dimension (time).
 If you need to adapt it, you can contact me directly, and I will provide guidance.
-A full description of the algorithm can be found in the publication.
+You can find a complete description of the algorithm in the publication.
 
 ### Split the dataset into trajectories
 
@@ -63,9 +61,11 @@ dd, ii = tnn.query(tc, X, batch, time_window, s=s, k=7)
 
 If you have a considerable number of lines, you might want to fetch the points in only
 a subpart of them. The algorithm will be much faster but might omit points contained in lines that were further away.
-If your dataset comprises chunks of points and you want to limit the query to a given chunk, you need to provide the boundaries of those chunks and the corresponding indexes. If you don't need that just pass (0, n_lines) as boundaries.
+Suppose your dataset comprises chunks of points, and you want to limit the query to a given chunk.
+In that case, you need to provide the boundaries of those chunks and the corresponding indexes.
+If you don't need that, just pass (0, n_lines) as boundaries.
 
-To do both, you need to give to the algorithm a tuple `(limit, boundaries, index).`
+You need to give the algorithm a tuple `(limit, boundaries, index) to do both.`
 Here is an example showing the limitation to the two previous segments
 
 ```python
