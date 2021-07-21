@@ -22,7 +22,7 @@ A publication is pending review at [ICONIP 2021](https://iconip2021.apnns.org/).
 
 ## Dataset
 
-A dataset containing flight trajectories is available here : [https://www.idiap.ch/en/dataset/skysoft/index_html](https://www.idiap.ch/en/dataset/skysoft/index_html)
+A dataset containing flight trajectories is available here : [https://www.idiap.ch/en/dataset/skysoft](https://www.idiap.ch/en/dataset/skysoft)
 
 ## How to use?
 
