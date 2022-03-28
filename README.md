@@ -1,5 +1,9 @@
 # Trajectory Nearest Neighbors
 
+Repository holding the code for PyTorch implementation of the Trajectory Nearest Neighbors algorithm.
+
+This work was published at [SIAM Data Mining 2022](https://www.siam.org/conferences/cm/program/accepted-papers/sdm22-accepted-papers) a preprint is available [here](https://arxiv.org/abs/2112.10408).  
+
 This code was developed as a part of the **Innosuisse MALAT: Machine Learning for Air Traffic** project, which is a partnership between SkySoft ATM and the Idiap Research Institute.
 
 Main research partner : **Pr. François Fleuret (UNIGE)**
@@ -12,13 +16,11 @@ For any questions/remarks about this work or my research, feel free to contact t
 
 ## Abstract
 
-This is a novel algorithm for fetching nearest neighbors in a data set whose elements are organized along smooth trajectories that can be approximated with piece-wise linear structures.
-We introduce an efficient and exact strategy that can be implemented with algebraic tensorial operations and is consequently very adapted to modern GPU-based computing infrastructure.
-
-This method can be used with a scalable Euclidean metric and allows to mask data points along one dimension.
-When applied, this method is more efficient than plain Euclidean $k$-NN and other well-known data selection methods like KDTrees and provides a several-fold speed-up.
-
-A publication is pending review at [ICONIP 2021](https://iconip2021.apnns.org/).
+This paper proposes a simple yet efficient high-altitude wind nowcasting pipeline. It processes efficiently a vast amount of live data recorded by airplanes over the whole airspace and reconstructs the wind field with good accuracy. It creates a unique context for each point in the dataset and then extrapolates from it. As creating such context is computationally intensive, this paper proposes a novel algorithm that reduces the time and memory cost by efficiently fetching nearest
+neighbors in a data set whose elements are organized along smooth trajectories that can be approximated with piecewise linear structures. We introduce an efficient and exact strategy implemented through algebraic tensorial operations, which is well-suited to modern GPU-based computing infrastructure.
+This method employs a scalable Euclidean metric and allows masking data points along one dimension.
+When applied, this method is more efficient than plain Euclidean k-NN and other well-known data selection methods such as KDTrees and provides a several-fold speedup. 
+We provide a PyTorch implementation and a novel data set to replicate empirical results.
 
 ## Dataset
 
